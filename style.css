@@ -1,0 +1,177 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#log-header {
+    background-color: orange;
+}
+
+#reg-header {
+    background-color: black;
+    height: 100px;
+    /* background: linear-gradient(90deg, hsla(50, 57%, 47%, 1) 0%, hsla(56, 83%, 82%, 1) 100%); */
+    /* background: linear-gradient(90deg, hsla(38, 81%, 52%, 1) 0%, hsla(62, 76%, 64%, 1) 100%); */
+
+    /* background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%); */
+    /* background: linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%); */
+
+}
+
+
+
+#reg-img {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#reg-image {
+    width: 100%;
+    height: 100%;
+}
+
+#log-image {
+    width: 100%;
+    height: 100%;
+}
+
+#reg-form {
+    width: 50%;
+    height: 100%;
+    float: left;
+    /* background-image: linear-gradient(f5ccd4); */
+    /* background-color: f5ccd4; */
+    /* background: linear-gradient(90deg, hsla(12, 84%, 68%, 1) 0%, hsla(343, 100%, 66%, 1) 100%); */
+    /* background: linear-gradient(90deg, hsla(356, 76%, 50%, 1) 0%, hsla(14, 63%, 36%, 1) 100%); */
+}
+
+#reg-btn {
+    background: linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#reg-text {
+    color: #fff;
+}
+
+#log-img {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#log-form {
+    width: 50%;
+    height: 100%;
+    float: left;
+    /* background: linear-gradient(90deg, hsla(12, 84%, 68%, 1) 0%, hsla(343, 100%, 66%, 1) 100%); */
+}
+
+#log-btn {
+    background: linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%);
+
+}
+
+
+
+#reg-link {
+    transition: .1s;
+    text-decoration: none;
+    /* color: #fff; */
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#reg-link:hover {
+    color: green;
+    text-decoration: underline;
+    z-index: 2;
+}
+
+#log-link {
+    transition: .1s;
+    text-decoration: none;
+    /* color: #fff; */
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#log-link:hover {
+    color: green;
+    text-decoration: underline;
+    z-index: 2;
+}
+
+/* #home-content{
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+} */
+
+#welcome-div {
+    /* background: linear-gradient(90deg, hsla(12, 84%, 68%, 1) 0%, hsla(343, 100%, 66%, 1) 100%); */
+    /* background: linear-gradient(90deg, hsla(311, 74%, 87%, 1) 0%, hsla(275, 19%, 88%, 1) 100%); */
+    background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+}
+#welcome_txt{
+    font-weight: bold;
+    font-size: 40px;
+    color: #ffff;
+    font-family: 'Bungee Inline', cursive;
+}
+#logout-btn{
+    height: 40px;
+    /* background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%); */
+    /* background: linear-gradient(90deg, hsla(175, 79%, 63%, 1) 0%, hsla(82, 96%, 57%, 1) 100%); */
+    background: linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+
+    color: #fff;
+}
+#balance_div{
+    /* background: linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%); */
+    /* background: black; */
+    /* background: linear-gradient(90deg, hsla(208, 7%, 55%, 1) 0%, hsla(191, 5%, 40%, 1) 100%); */
+    /* color: #ffff; */
+    /* box-shadow:  0 0 20px 20px white; */
+    border-radius: 15px;
+    box-shadow:  0 0 30px #b0afaf;
+
+}
+#income-div{
+   
+    border-radius: 15px;
+    box-shadow:  0 0 30px #b0afaf;
+    /* background: #95ECB0; */
+}
+#expense-div{
+    /* background: #E60B09; */
+    /* background: #E41B17; */
+    /* background: #F08080; */
+    border-radius: 15px;
+    box-shadow:  0 0 30px #b0afaf;
+}
+#income_table{
+    background: #95ECB0;
+}
+#expense_table{
+    /* background: #F08080; */
+    background: 
+    #ef3d47;
+    color: #fff;
+}
+#incm-btn{
+    background: #95ECB0;
+
+}
+#expns-btn{
+    /* background: #F08080; */
+    background: 
+    #ef3d47;
+    color: #ffff;
+}
