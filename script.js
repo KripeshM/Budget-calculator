@@ -61,24 +61,24 @@ function addIncome() {
     if (income_amnt == '' || income_des == '') {
         alert("Enter proper data")
     }
-    else{
+    else {
         localStorage.setItem(income_des, income_amnt)
-    accBalance = parseFloat(Number(accBalance) + Number(income_amnt));
-    balance.innerHTML = `&#x20b9;${accBalance}/-`
-    if (accBalance > 5000) {
-        document.getElementById("balance_div").style.boxShadow = "0 0 30px #95ECB0"
-    }
-    i_table = `
+        accBalance = parseFloat(Number(accBalance) + Number(income_amnt));
+        balance.innerHTML = `&#x20b9;${accBalance}/-`
+        if (accBalance => 5000) {
+            document.getElementById("balance_div").style.boxShadow = "0 0 30px #95ECB0"
+        }
+        i_table = `
         <tr>
         <td class="border border-2 border-dark ">${income_des}</td>
         <td class="border border-2 border-dark ">${income_amnt}</td>
         </tr>
     `
-    income.innerHTML += i_table;
-    incm_amnt.value = '';
-    incm_des.value = '';
+        income.innerHTML += i_table;
+        incm_amnt.value = '';
+        incm_des.value = '';
     }
-    
+
 }
 
 function addExpense() {
@@ -87,24 +87,30 @@ function addExpense() {
     if (expense_amnt == '' || expense_des == '') {
         alert("Enter proper data")
     }
-    else{
-        localStorage.setItem(expense_des, expense_amnt);
-        accBalance = parseFloat(Number(accBalance) - Number(expense_amnt));
-        balance.innerHTML = `&#x20b9;${accBalance}/-`
-        if (accBalance < 5000) {
-            document.getElementById("balance_div").style.boxShadow = "0 0 30px #ef3d47"
+    else {
+        if (expense_amnt > accBalance) {
+            alert("Your expense amount is greater than your balance");
         }
-        e_table = `
+        else {
+            localStorage.setItem(expense_des, expense_amnt);
+            accBalance = parseFloat(Number(accBalance) - Number(expense_amnt));
+            balance.innerHTML = `&#x20b9;${accBalance}/-`
+            if (accBalance < 5000) {
+                document.getElementById("balance_div").style.boxShadow = "0 0 30px #ef3d47"
+            }
+            e_table = `
             <tr>
             <td class="border border-2 border-dark ">${expense_des}</td>
             <td class="border border-2 border-dark ">${expense_amnt}</td>
             </tr>
         `
-        expense.innerHTML += e_table;
-        expns_amnt.value = '';
-        expns_des.value = '';
+            expense.innerHTML += e_table;
+            expns_amnt.value = '';
+            expns_des.value = '';
+        }
+
     }
-    
+
 }
 
 function Logout() {
